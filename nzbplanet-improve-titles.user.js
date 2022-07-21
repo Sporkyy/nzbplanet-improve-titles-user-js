@@ -2,6 +2,7 @@
 // @name        NzbPlanet - Improve Titles
 // @namespace   https://github.com/Sporkyy/
 // @match       https://nzbplanet.net/*
+// @run-at      document-idle
 // @grant       none
 // @version     1.2
 // @author      Sporkyy
