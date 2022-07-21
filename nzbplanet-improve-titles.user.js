@@ -2,9 +2,8 @@
 // @name        NzbPlanet - Improve Titles
 // @namespace   https://github.com/Sporkyy/
 // @match       https://nzbplanet.net/*
-// @run-at      document-start
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      Sporkyy
 // @description Gives the pages on NzbPlanet.net meaningful titles
 // @icon        https://www.google.com/s2/favicons?domain=nzbplanet.net
