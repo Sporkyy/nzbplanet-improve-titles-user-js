@@ -1,15 +1,17 @@
 // ==UserScript==
-// @name        nzbplanet.net - Add Useful Title
-// @namespace   Violentmonkey Scripts
+// @name        NzbPlanet - Improve Titles
+// @namespace   https://github.com/Sporkyy/
 // @match       https://nzbplanet.net/*
-// @icon        https://www.google.com/s2/favicons?domain=nzbplanet.net
+// @run-at      document-start
 // @grant       none
-// @version     1.0
-// @author      -
-// @description 2/27/2020, 7:47:01 PM
+// @version     1.1
+// @author      Sporkyy
+// @description Gives the pages on NzbPlanet.net meaningful titles
+// @icon        https://www.google.com/s2/favicons?domain=nzbplanet.net
 // ==/UserScript==
 
 (() => {
-  const h1 = document.querySelector('#content h1');
-  if (!!h1) return (window.document.title = h1.textContent.trim());
+  const h1 = document.querySelector('h1');
+  const wdt = window.document.title;
+  window.document.title = h1?.textContent?.trim() ?? wdt;
 })();
