@@ -8,6 +8,7 @@
 // @author      Sporkyy
 // @description Gives the pages on NzbPlanet.net meaningful titles
 // @icon        https://www.google.com/s2/favicons?domain=nzbplanet.net
+// @noframes
 // ==/UserScript==
 
 (() => {
