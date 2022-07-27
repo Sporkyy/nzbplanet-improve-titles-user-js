@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NzbPlanet - Improve Titles
 // @namespace    https://github.com/Sporkyy/
-// @version      1.0.3
+// @version      1.0.4
 // @description  Gives the pages on NzbPlanet.net meaningful titles
 // @author       Sporkyy
 // @match        https://nzbplanet.net/*
@@ -14,9 +14,8 @@
 
   const qs = (s, c = document) => c.querySelector(s);
 
-  const h1 = qs('h1');
+  const h1 = qs('#content h1');
   const wd = window.document;
-  const wdt = wd.title;
 
-  wd.title = h1?.textContent?.trim() ?? wdt;
+  wd.title = `${h1?.textContent?.trim()} - NzbPlanet`;
 })();
